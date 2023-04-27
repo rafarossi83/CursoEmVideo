@@ -1,3 +1,5 @@
+from time import sleep
+
 opcao = ''
 num1 = float(input('Digite o primeiro numero: '))
 num2 = float(input('Digite o segundo numero: '))
@@ -22,5 +24,10 @@ while opcao != 5:
     elif opcao == 4:
         num1 = float(input('Digite o primeiro numero: '))
         num2 = float(input('Digite o segundo valor: '))
+    elif opcao == 5:
+        print('Finalizando...')
+        sleep(1)
+    else:
+        print('Opcao Invalida, tente novamente!')
 
 print('Programa encerrado com sucesso!')
